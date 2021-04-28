@@ -165,11 +165,11 @@ void main(void)
 	while(1)
 	{
 		
-		//sang(5);
-		//sangtheoluot();
-		//sangtheoluot1();
-	//	sangtheoluotnguoc();
-	//	sangtheoluotnguoc2();
+		sang(5);
+		sangtheoluot();
+		sangtheoluot1();
+		sangtheoluotnguoc();
+		sangtheoluotnguoc2();
 		sangtheoluot3();
 		sangtheoluot4();
 	}

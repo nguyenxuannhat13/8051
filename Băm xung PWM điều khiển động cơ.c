@@ -13,6 +13,8 @@
 
 const unsigned char led7[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
 
+// Hien thi led 7 thanh
+
  void Delay(unsigned int count)
 {
 	int i,j;
@@ -21,8 +23,8 @@ const unsigned char led7[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
 } 
 
 void hien_thi(unsigned char a, 
-							unsigned char b, 
-							unsigned char c)
+	unsigned char b, 
+	unsigned char c)
 {
 	
 	Led7seg  = led7[a];
@@ -43,7 +45,12 @@ void hien_thi(unsigned char a,
 	
 }
 
+void Hien_thi(void) 
+{
+		hien_thi((du/100),(du%100)/10, (du%10));
+}
 
+// Pam xung PWM
 
 #define PWM_Period 64535
 
@@ -81,10 +88,7 @@ void Timer1_ISR(void) interrupt 3 using 2
 	
 }
 
-void Hien_thi(void) 
-{
-		hien_thi((du/100),(du%100)/10, (du%10));
-}
+// Nut an dieu khien
 
 void Timer0_ISR(void)
 {
@@ -113,6 +117,8 @@ void Timer0_ISR(void)
 		while(P1_4==0);
 	}
 }
+
+// Tinh toan tg dem cho High va Low
 
 void Set_DutyCycle_To()
 {

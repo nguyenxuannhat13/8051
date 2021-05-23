@@ -52,7 +52,8 @@ void Hien_thi(void)
 
 // Pam xung PWM
 
-#define PWM_Period 64535
+#define PWM_Period 64535   // Lay 65536 - PWM_Period = So dem trong 1 chu ky, mot so dem mat 1 us neu thach anh = 12Mhz
+			   //
 
 sbit Servo_Motor_Pin = P3^0;
 

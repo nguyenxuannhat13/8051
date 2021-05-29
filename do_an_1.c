@@ -80,7 +80,7 @@ void stop (void)
 } 
 
 
-
+// dieu hien toc do
 
 #define PWM_Period 55536
 

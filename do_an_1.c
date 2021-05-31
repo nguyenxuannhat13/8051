@@ -143,7 +143,8 @@ void main()
 	s_left=1;
 	s_right=1;
 	
-	duty_cycle=99; // Phan tram cua muc 1 trong 1 chu ky
+	duty_cycle=30; // Phan tram cua muc 1 trong 1 chu ky
+	// Thay doi tu 0 -100 de thay doi toc do dong co
 	while(1)
 	{ 	  
   	   

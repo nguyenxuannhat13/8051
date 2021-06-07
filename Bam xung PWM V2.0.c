@@ -1,5 +1,6 @@
 // Dieu khien dong co L298 V2.0
 // Bam xung PWM dieu khien toc do dong co
+// Dieu khien dong co phan cap 25 50 75 100
 ////Dung thach anh 11,0592 MHz
 
 #include <regx52.h>
